@@ -4,7 +4,11 @@ import Home from "../pages/home/Home.jsx";
 import Login from "../components/Login";
 import Register from "../components/Register";
 import CartPage from "../pages/books/CartPage";
+<<<<<<< HEAD
 import CheckoutPage from "../pages/books/CheckoutPage";
+=======
+import CheckoutPage from "../pages/books/CheckoutPage.jsx";
+>>>>>>> 237c6fa569d7dd7c71f6ce30801f7e2ea420d99a
 import SingleBook from "../pages/books/SingleBook";
 import PrivateRoute from "./PrivateRoute";
 import OrderPage from "../pages/books/OrderPage";
@@ -59,7 +63,29 @@ const router = createBrowserRouter([
         },
         {
           path: "/user-dashboard",
+<<<<<<< HEAD
           element: <AdminRoute><DashboardLayout /></AdminRoute>
+=======
+          element: <AdminRoute><DashboardLayout /></AdminRoute>,
+          children: [
+            {
+              path: "",
+              element: <AdminRoute><Dashboard /></AdminRoute>
+            },
+            {
+              path: "add-new-book",
+              element: <AdminRoute><AddBook /></AdminRoute>
+            },
+            {
+              path: "edit-book/:id",
+              element: <AdminRoute><UpdateBook /> </AdminRoute>
+            },
+            {
+              path: "manage-books",
+              element: <AdminRoute><ManageBooks /></AdminRoute>
+            }
+          ]
+>>>>>>> 237c6fa569d7dd7c71f6ce30801f7e2ea420d99a
         }
       ]
     },
