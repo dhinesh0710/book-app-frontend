@@ -4,7 +4,7 @@ import Home from "../pages/home/Home.jsx";
 import Login from "../components/Login";
 import Register from "../components/Register";
 import CartPage from "../pages/books/CartPage";
-import CheckoutPage from "../pages/books/CheckOutPage";
+import CheckoutPage from "../pages/books/CheckoutPage.jsx";
 import SingleBook from "../pages/books/SingleBook";
 import PrivateRoute from "./PrivateRoute";
 import OrderPage from "../pages/books/OrderPage";
